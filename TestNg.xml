@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name="SwaggerAPI">
+	<test thread-count="5" name="RestAPI">
+		<classes>
+			<class name="GetAccess">
+			
+           </class>
+		</classes>
+		<!-- Running 2 programs in different modules -->
+
+	</test> <!-- Test -->
+       <test name="RestAPI2">
+    <classes>
+      <class name="ProductList"/>
+     
+    </classes>
+  </test>
+              
+	
+
+</suite> <!-- Suite -->

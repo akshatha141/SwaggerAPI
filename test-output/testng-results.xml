@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-08T19:19:30 IST" name="SwaggerAPI" finished-at="2021-11-08T19:19:43 IST" duration-ms="12527">
+    <groups>
+    </groups>
+    <test started-at="2021-11-08T19:19:30 IST" name="RestAPI" finished-at="2021-11-08T19:19:36 IST" duration-ms="5999">
+      <class name="GetAccess">
+        <test-method is-config="true" signature="LoadProperties()[pri:0, instance:GetAccess@1bb266b3]" started-at="2021-11-08T19:19:30 IST" name="LoadProperties" finished-at="2021-11-08T19:19:30 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadProperties -->
+        <test-method signature="GetAccessToken()[pri:1, instance:GetAccess@1bb266b3]" started-at="2021-11-08T19:19:30 IST" name="GetAccessToken" finished-at="2021-11-08T19:19:33 IST" duration-ms="3350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAccessToken -->
+        <test-method signature="LoginAccessToken()[pri:2, instance:GetAccess@1bb266b3]" started-at="2021-11-08T19:19:33 IST" name="LoginAccessToken" finished-at="2021-11-08T19:19:35 IST" depends-on-methods="GetAccess.GetAccessToken" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAccessToken -->
+        <test-method signature="GetUserAccountDetails()[pri:3, instance:GetAccess@1bb266b3]" started-at="2021-11-08T19:19:35 IST" name="GetUserAccountDetails" finished-at="2021-11-08T19:19:35 IST" depends-on-methods="GetAccess.LoginAccessToken" duration-ms="699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserAccountDetails -->
+        <test-method signature="LogoutFromSystem()[pri:4, instance:GetAccess@1bb266b3]" started-at="2021-11-08T19:19:35 IST" name="LogoutFromSystem" finished-at="2021-11-08T19:19:36 IST" depends-on-methods="GetAccess.LoginAccessToken" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromSystem -->
+      </class> <!-- GetAccess -->
+    </test> <!-- RestAPI -->
+    <test started-at="2021-11-08T19:19:36 IST" name="RestAPI2" finished-at="2021-11-08T19:19:43 IST" duration-ms="6405">
+      <class name="ProductList">
+        <test-method is-config="true" signature="LoadProperties()[pri:0, instance:ProductList@67080771]" started-at="2021-11-08T19:19:36 IST" name="LoadProperties" finished-at="2021-11-08T19:19:36 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadProperties -->
+        <test-method signature="GetAccessToken1()[pri:1, instance:ProductList@67080771]" started-at="2021-11-08T19:19:36 IST" name="GetAccessToken1" finished-at="2021-11-08T19:19:37 IST" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAccessToken1 -->
+        <test-method signature="LoginAccessToken1()[pri:2, instance:ProductList@67080771]" started-at="2021-11-08T19:19:37 IST" name="LoginAccessToken1" finished-at="2021-11-08T19:19:38 IST" depends-on-methods="ProductList.GetAccessToken1" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAccessToken1 -->
+        <test-method signature="GetProductDetails()[pri:3, instance:ProductList@67080771]" started-at="2021-11-08T19:19:38 IST" name="GetProductDetails" finished-at="2021-11-08T19:19:40 IST" depends-on-methods="ProductList.LoginAccessToken1" duration-ms="1983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetProductDetails -->
+        <test-method signature="Updateproducts()[pri:4, instance:ProductList@67080771]" started-at="2021-11-08T19:19:40 IST" name="Updateproducts" finished-at="2021-11-08T19:19:40 IST" depends-on-methods="ProductList.GetProductDetails" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Updateproducts -->
+        <test-method signature="GetProductDetaildByID()[pri:5, instance:ProductList@67080771]" started-at="2021-11-08T19:19:40 IST" name="GetProductDetaildByID" finished-at="2021-11-08T19:19:41 IST" depends-on-methods="ProductList.Updateproducts" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetProductDetaildByID -->
+        <test-method signature="UpdateProductQuantity()[pri:6, instance:ProductList@67080771]" started-at="2021-11-08T19:19:41 IST" name="UpdateProductQuantity" finished-at="2021-11-08T19:19:42 IST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateProductQuantity -->
+        <test-method signature="GetProductQuantityDetailsByID()[pri:7, instance:ProductList@67080771]" started-at="2021-11-08T19:19:42 IST" name="GetProductQuantityDetailsByID" finished-at="2021-11-08T19:19:43 IST" depends-on-methods="ProductList.UpdateProductQuantity" duration-ms="693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetProductQuantityDetailsByID -->
+      </class> <!-- ProductList -->
+    </test> <!-- RestAPI2 -->
+  </suite> <!-- SwaggerAPI -->
+</testng-results>
