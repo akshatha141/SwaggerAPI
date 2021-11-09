@@ -126,6 +126,9 @@ public class ProductList extends BaseClass {
 
 		/* To Verify if the Product Price is Updated */
 		System.out.println("Updated Price :" + Updated_Price);
+		
+		/* Assertion to verify the Updated Price */
+		Assert.assertEquals(Updated_Price,"6000", "Price not Updated");
 
 	}
 
@@ -182,5 +185,8 @@ public class ProductList extends BaseClass {
 
 		/* To Verify if the Product Price is Updated */
 		System.out.println("Updated Quantity :" + Updated_Quantity);
+		
+		/* Assertion to verify the Updated Product Quantity */
+		Assert.assertEquals(Updated_Quantity,"5000", "Quantity not Updated");
 	}
 }
