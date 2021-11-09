@@ -123,12 +123,17 @@ public class ProductList extends BaseClass {
 		System.out.println("Session ID is :" + ProductID.getSessionId());
 
 		String Updated_Price = ProductID.asString().substring(407, 411);
+		String Updated_Id = ProductID.asString().substring(265, 267);
 
 		/* To Verify if the Product Price is Updated */
 		System.out.println("Updated Price :" + Updated_Price);
+		System.out.println("Updated Id :" + Updated_Id);
 		
 		/* Assertion to verify the Updated Price */
 		Assert.assertEquals(Updated_Price,"6000", "Price not Updated");
+		
+		/*Assertion to verify the ID */
+		Assert.assertEquals(Updated_Id,"58", "ID not Updated");
 
 	}
 
@@ -182,11 +187,16 @@ public class ProductList extends BaseClass {
 		System.out.println("Session ID is :" + ProductQuantityID.getSessionId());
 		
 		String Updated_Quantity = ProductQuantityID.asString().substring(1494,1498);
+		String Updated_Id = ProductQuantityID.asString().substring(265, 267);
 
 		/* To Verify if the Product Price is Updated */
 		System.out.println("Updated Quantity :" + Updated_Quantity);
+		System.out.println("Updated Id :" + Updated_Id);
 		
 		/* Assertion to verify the Updated Product Quantity */
 		Assert.assertEquals(Updated_Quantity,"5000", "Quantity not Updated");
+		
+		/* Assertion to verify the ID */
+		Assert.assertEquals(Updated_Id,"59", "ID not Updated");
 	}
 }
