@@ -59,8 +59,17 @@ public class ProductList extends BaseClass {
 
 		getProductDetails.prettyPrint();
 
+		/* Script Assertion */
 		Assert.assertEquals(getProductDetails.getStatusCode(), 200, "status code not matching");
+		Assert.assertEquals(getProductDetails.getStatusLine(), "HTTP/1.1 200 OK", "status code not matching");
+		Assert.assertEquals(getProductDetails.getContentType(), "application/json; charset=utf-8", "status code not matching");
+		Assert.assertEquals(getProductDetails.getSessionId(), null, "status code not matching");
+		
 		System.out.println("Status code is :" + getProductDetails.getStatusCode());
+		System.out.println("Response time is :" + getProductDetails.getTime());
+		System.out.println("Status line is :" + getProductDetails.getStatusLine());
+		System.out.println("ContentType is :" + getProductDetails.getContentType());
+		System.out.println("Session ID is :" + getProductDetails.getSessionId());
 		System.out.println("Successfully retrived List of ALL the Products");
 	}
 
@@ -77,8 +86,17 @@ public class ProductList extends BaseClass {
 
 		Updateproducts.prettyPrint();
 
+		/* Script Assertion */
 		Assert.assertEquals(Updateproducts.getStatusCode(), 200, "status code not matching");
+		Assert.assertEquals(Updateproducts.getStatusLine(), "HTTP/1.1 200 OK", "status code not matching");
+		Assert.assertEquals(Updateproducts.getContentType(), "application/json; charset=utf-8", "status code not matching");
+		Assert.assertEquals(Updateproducts.getSessionId(), null, "status code not matching");
+		
 		System.out.println("Status code is :" + Updateproducts.getStatusCode());
+		System.out.println("Response time is :" + Updateproducts.getTime());
+		System.out.println("Status line is :" + Updateproducts.getStatusLine());
+		System.out.println("ContentType is :" + Updateproducts.getContentType());
+		System.out.println("Session ID is :" + Updateproducts.getSessionId());
 		System.out.println("Successfully updated the Product Details to the Store");
 	}
 
@@ -92,8 +110,17 @@ public class ProductList extends BaseClass {
 
 		ProductID.prettyPrint();
 
+		/* Script Assertion */
 		Assert.assertEquals(ProductID.getStatusCode(), 200, "status code not matching");
+		Assert.assertEquals(ProductID.getStatusLine(), "HTTP/1.1 200 OK", "status code not matching");
+		Assert.assertEquals(ProductID.getContentType(), "application/json; charset=utf-8", "status code not matching");
+		Assert.assertEquals(ProductID.getSessionId(), null, "status code not matching");
+		
 		System.out.println("Status code is :" + ProductID.getStatusCode());
+		System.out.println("Response time is :" + ProductID.getTime());
+		System.out.println("Status line is :" + ProductID.getStatusLine());
+		System.out.println("ContentType is :" + ProductID.getContentType());
+		System.out.println("Session ID is :" + ProductID.getSessionId());
 
 		String Updated_Price = ProductID.asString().substring(407, 411);
 
@@ -115,8 +142,17 @@ public class ProductList extends BaseClass {
 
 		UpdateproductsQuantity.prettyPrint();
 
+		/* Script Assertion */
 		Assert.assertEquals(UpdateproductsQuantity.getStatusCode(), 200, "status code not matching");
+		Assert.assertEquals(UpdateproductsQuantity.getStatusLine(), "HTTP/1.1 200 OK", "status code not matching");
+		Assert.assertEquals(UpdateproductsQuantity.getContentType(), "application/json; charset=utf-8", "status code not matching");
+		Assert.assertEquals(UpdateproductsQuantity.getSessionId(), null, "status code not matching");
+		
 		System.out.println("Status code is :" + UpdateproductsQuantity.getStatusCode());
+		System.out.println("Response time is :" + UpdateproductsQuantity.getTime());
+		System.out.println("Status line is :" + UpdateproductsQuantity.getStatusLine());
+		System.out.println("ContentType is :" + UpdateproductsQuantity.getContentType());
+		System.out.println("Session ID is :" + UpdateproductsQuantity.getSessionId());
 		System.out.println("Successfully updated the Product Quantity to the Store");
 	}
 
@@ -130,8 +166,17 @@ public class ProductList extends BaseClass {
 
 		ProductQuantityID.prettyPrint();
 
+		/* Script Assertion */
 		Assert.assertEquals(ProductQuantityID.getStatusCode(), 200, "status code not matching");
+		Assert.assertEquals(ProductQuantityID.getStatusLine(), "HTTP/1.1 200 OK", "status code not matching");
+		Assert.assertEquals(ProductQuantityID.getContentType(), "application/json; charset=utf-8", "status code not matching");
+		Assert.assertEquals(ProductQuantityID.getSessionId(), null, "status code not matching");
+		
 		System.out.println("Status code is :" + ProductQuantityID.getStatusCode());
+		System.out.println("Response time is :" + ProductQuantityID.getTime());
+		System.out.println("Status line is :" + ProductQuantityID.getStatusLine());
+		System.out.println("ContentType is :" + ProductQuantityID.getContentType());
+		System.out.println("Session ID is :" + ProductQuantityID.getSessionId());
 		
 		String Updated_Quantity = ProductQuantityID.asString().substring(1494,1498);
 
